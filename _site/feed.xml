@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>chaosmonster</title>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Subscribe to DOM Events in Angular</title>
+        <description>&lt;p&gt;So my basic problem was, that I needed to somehow delay a &lt;strong&gt;blur&lt;/strong&gt; event (or to be precise the callback function) after a &lt;strong&gt;click&lt;/strong&gt; event.&lt;br /&gt;
+My first thought was to use a &lt;code class=&quot;highlighter-rouge&quot;&gt;debounceTime&lt;/code&gt; operator from &lt;strong&gt;rxjs&lt;/strong&gt;, but I found out that &lt;strong&gt;blur&lt;/strong&gt; is a real EventListener and not the &lt;strong&gt;rx&lt;/strong&gt; counter part &lt;code class=&quot;highlighter-rouge&quot;&gt;Observale.ofEvent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;While the &lt;a href=&quot;https://www.youtube.com/watch?v=InOWBvseRYU&quot;&gt;“This.JavaScript”&lt;/a&gt; panel at 29. January 2017 &lt;a href=&quot;https://twitter.com/benlesh&quot;&gt;Ben Lesh&lt;/a&gt; mentioned something about &lt;strong&gt;rxjs&lt;/strong&gt; doing some stuff with &lt;strong&gt;zone.js&lt;/strong&gt;.&lt;br /&gt;
+After the show I dug into the issues on github and found this &lt;a href=&quot;https://github.com/angular/angular/issues/13248&quot;&gt;issue&lt;/a&gt;, where &lt;a href=&quot;https://twitter.com/mhevery&quot;&gt;Miško&lt;/a&gt; introduces what I was looking for. As this issue from December and seems to depend on changes in &lt;strong&gt;rxjs&lt;/strong&gt; I’m hoping that it may be part of some minor version of &lt;strong&gt;Angular&lt;/strong&gt; 4 if not of the verison 4 itself in March/ April this year.&lt;/p&gt;
+
+&lt;p&gt;Btw my first problem could be solved like explained &lt;a href=&quot;https://github.com/angular/angular/issues/5489#issuecomment-160036492&quot;&gt;here&lt;/a&gt; or like I did in the above case move from the &lt;strong&gt;click&lt;/strong&gt; event to the &lt;strong&gt;mousedown&lt;/strong&gt; event as it is executed before the &lt;strong&gt;blur&lt;/strong&gt; event.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 29 Jan 2017 00:00:00 +0100</pubDate>
+				<link>/2017/01/29/subscribe-to-dom-events-in-angular/</link>
+				<guid isPermaLink="true">/2017/01/29/subscribe-to-dom-events-in-angular/</guid>
+			</item>
+		
+	</channel>
+</rss>

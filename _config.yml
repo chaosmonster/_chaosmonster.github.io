@@ -1,0 +1,43 @@
+name:               "chaosmonster"
+description:        "a little bit of chaos and coding"
+
+url:                ""
+author:             "chaosmonster"
+email:              "chaosmonster.github.io@googlemail.com"
+twitter:            "chaos_monster"
+email:              "chaosmonster.github.io@googlemail.com"
+github:             "chaosmonster"
+
+disqus_shortname:   "chaosmonster"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "About"
+    href:           "/about"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
