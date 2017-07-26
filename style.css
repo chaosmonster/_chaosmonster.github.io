@@ -327,8 +327,7 @@ tbody tr:nth-child(odd) th {
       margin-top: 0;
       margin-left: 20%;
       padding: 3%;
-      min-width: 80%;
-      height: 800px; } }
+      min-width: 80%; } }
 
 .bloghead .bloghead-title span {
   color: #BDBDBD; }
